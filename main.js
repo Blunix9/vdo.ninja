@@ -6923,17 +6923,17 @@ async function main() {
 				}
 			}
 		} else {
-			warnlog("Bitrate being throttled to max of 4000 kbps");
+			warnlog("Bitrate being throttled to max of 60000 kbps");
 			if (session.maxvideobitrate !== false) {
-				if (session.maxvideobitrate > 4000) {
-					session.maxvideobitrate = 4000; // Please feel free to get rid of this if using your own TURN servers...
+				if (session.maxvideobitrate > 60000) {
+					session.maxvideobitrate = 60000;
 				}
 			} else {
-				session.maxvideobitrate = 4000; // don't let people pull more than 4000 from you
+				session.maxvideobitrate = 60000;
 			}
 			if (session.bitrate !== false) {
-				if (session.bitrate > 4000) {
-					session.bitrate = 4000; // Please feel free to get rid of this if using your own TURN servers...
+				if (session.bitrate > 60000) {
+					session.bitrate = 60000;
 				}
 			}
 		}
